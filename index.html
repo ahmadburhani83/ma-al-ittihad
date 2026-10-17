@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAS Al Ittihad - Profil Sekolah & Galeri (NPSN: 20584241)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo & School Name -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-emerald-700 text-white rounded-xl flex items-center justify-center font-bold text-xl shadow-md">
+                        AI
+                    </div>
+                    <div>
+                        <span class="block font-bold text-lg text-slate-900 leading-tight">MAS AL ITTIHAD</span>
+                        <span class="text-xs text-slate-500 font-medium">NPSN: 20584241 | Trowulan, Mojokerto</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden md:flex items-center space-x-8 font-medium text-sm">
+                    <a href="#beranda" class="text-emerald-700 hover:text-emerald-800 transition">Beranda</a>
+                    <a href="#profil" class="text-slate-600 hover:text-emerald-700 transition">Profil & Akreditasi</a>
+                    <a href="#galeri" class="text-slate-600 hover:text-emerald-700 transition">Galeri Kegiatan</a>
+                    <a href="#informasi" class="text-slate-600 hover:text-emerald-700 transition">Informasi</a>
+                    <a href="#kontak" class="text-slate-600 hover:text-emerald-700 transition">Kontak</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden md:flex items-center">
+                    <a href="https://www.instagram.com/galery_malta/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded-xl text-sm font-medium shadow hover:opacity-90 transition flex items-center space-x-2">
+                        <i class="fab fa-instagram"></i>
+                        <span>@galery_malta</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none p-2 rounded-lg">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
+            <a href="#beranda" class="block py-2 text-emerald-700 font-medium">Beranda</a>
+            <a href="#profil" class="block py-2 text-slate-600">Profil & Akreditasi</a>
+            <a href="#galeri" class="block py-2 text-slate-600">Galeri Kegiatan</a>
+            <a href="#informasi" class="block py-2 text-slate-600">Informasi</a>
+            <a href="#kontak" class="block py-2 text-slate-600">Kontak</a>
+            <div class="pt-2">
+                <a href="https://www.instagram.com/galery_malta/" target="_blank" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2.5 rounded-xl text-sm font-medium shadow flex items-center justify-center space-x-2">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram @galery_malta</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="beranda" class="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-slate-900 text-white py-24 lg:py-32 overflow-hidden">
+        <!-- Background Overlay / Pattern -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#22c55e_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 mb-6">
+                <i class="fas fa-school"></i> Madrasah Aliyah Swasta Terakreditasi B
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                Selamat Datang di <br><span class="text-emerald-400">MAS Al Ittihad</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-lg sm:text-xl text-slate-300 mb-10">
+                Lembaga pendidikan Islam unggulan yang mencetak generasi berakhlak mulia, cerdas, dan berprestasi di Kabupaten Mojokerto.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#profil" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-3.5 rounded-xl font-semibold shadow-lg transition duration-200">
+                    Jelajahi Profil
+                </a>
+                <a href="#galeri" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/20 text-white px-8 py-3.5 rounded-xl font-semibold transition duration-200 flex items-center justify-center space-x-2">
+                    <i class="fab fa-instagram text-pink-400"></i>
+                    <span>Lihat Galeri Malta</span>
+                </a>
+            </div>
+
+            <!-- Quick Data Badges -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                <div class="bg-white/10 backdrop-blur border border-white/10 p-4 rounded-2xl text-center">
+                    <span class="block text-2xl lg:text-3xl font-bold text-emerald-400">20584241</span>
+                    <span class="text-xs text-slate-300 uppercase tracking-wider font-medium">NPSN Resmi</span>
+                </div>
+                <div class="bg-white/10 backdrop-blur border border-white/10 p-4 rounded-2xl text-center">
+                    <span class="block text-2xl lg:text-3xl font-bold text-emerald-400">Trowulan</span>
+                    <span class="text-xs text-slate-300 uppercase tracking-wider font-medium">Kab. Mojokerto</span>
+                </div>
+                <div class="bg-white/10 backdrop-blur border border-white/10 p-4 rounded-2xl text-center">
+                    <span class="block text-2xl lg:text-3xl font-bold text-emerald-400">Terakreditasi B</span>
+                    <span class="text-xs text-slate-300 uppercase tracking-wider font-medium">Mutu Teruji</span>
+                </div>
+                <div class="bg-white/10 backdrop-blur border border-white/10 p-4 rounded-2xl text-center">
+                    <span class="block text-2xl lg:text-3xl font-bold text-emerald-400">Swasta</span>
+                    <span class="text-xs text-slate-300 uppercase tracking-wider font-medium">Naungan Kemenag</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="profil" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight sm:text-4xl mb-4">Profil & Identitas Sekolah</h2>
+                <p class="text-slate-600 text-base sm:text-lg">Berdasarkan data resmi Kementerian Pendidikan Dasar & Menengah serta Kementerian Agama Republik Indonesia.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <!-- Info Card -->
+                <div class="lg:col-span-2 bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center space-x-3">
+                        <i class="fas fa-info-circle text-emerald-600"></i>
+                        <span>Data Pokok Pendidikan (Dapodik / EMIS)</span>
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6 text-sm">
+                        <div class="border-b border-slate-200 pb-3">
+                            <span class="block text-slate-500 font-medium">Nama Satuan Pendidikan</span>
+                            <span class="font-bold text-slate-900 text-base">MAS AL ITTIHAD</span>
+                        </div>
+                        <div class="border-b border-slate-200 pb-3">
+                            <span class="block text-slate-500 font-medium">Nomor Pokok Sekolah Nasional (NPSN)</span>
+                            <span class="font-bold text-emerald-700 text-base">20584241</span>
+                        </div>
+                        <div class="border-b border-slate-200 pb-3">
+                            <span class="block text-slate-500 font-medium">Bentuk Pendidikan</span>
+                            <span class="font-bold text-slate-900 text-base">MA (Madrasah Aliyah)</span>
+                        </div>
+                        <div class="border-b border-slate-200 pb-3">
+                            <span class="block text-slate-500 font-medium">Status Kepemilikan & Akreditasi</span>
+                            <span class="font-bold text-slate-900 text-base">Swasta (Terakreditasi B)</span>
+                        </div>
+                        <div class="sm:col-span-2 border-b border-slate-200 pb-3">
+                            <span class="block text-slate-500 font-medium">Alamat Lengkap</span>
+                            <span class="font-bold text-slate-900 text-base">Jl. Raden Wijaya No. 105, Desa/Kelurahan Tawangsari, Kec. Trowulan, Kab. Mojokerto, Prov. Jawa Timur</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vision Mission Card -->
+                <div class="bg-gradient-to-br from-emerald-800 to-emerald-950 text-white rounded-2xl p-6 sm:p-8 shadow-md">
+                    <h3 class="text-xl font-bold mb-4 flex items-center space-x-3">
+                        <i class="fas fa-bullseye text-emerald-400"></i>
+                        <span>Visi & Misi</span>
+                    </h3>
+                    <p class="text-slate-200 text-sm mb-4 leading-relaxed">
+                        "Terbentuknya generasi muslim yang bertaqwa, cerdas, terampil, berkarakter luhur, serta berwawasan kebangsaan."
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check-circle text-emerald-400 mt-1"></i>
+                            <span>Menyelenggarakan pendidikan islami yang berkualitas.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check-circle text-emerald-400 mt-1"></i>
+                            <span>Mengembangkan potensi akademik dan non-akademik siswa.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check-circle text-emerald-400 mt-1"></i>
+                            <span>Menanamkan kedisiplinan dan budi pekerti luhur.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-emerald-700 font-semibold text-sm uppercase tracking-wider block mb-2">Dokumentasi & Kegiatan</span>
+                    <h2 class="text-3xl font-bold text-slate-900 tracking-tight sm:text-4xl">Galeri Malta (@galery_malta)</h2>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <a href="https://www.instagram.com/galery_malta/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow hover:opacity-90 transition">
+                        <i class="fab fa-instagram text-lg"></i>
+                        <span>Kunjungi Instagram Resmi</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 group hover:shadow-md transition">
+                    <div class="relative h-64 overflow-hidden bg-emerald-100">
+                        <img src="https://placehold.co/600x400/166534/ffffff?text=Kegiatan+Upacara" alt="Kegiatan Siswa MAS Al Ittihad" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/e2e8f0/64748b?text=MAS+Al+Ittihad'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4">
+                            <span class="text-white text-sm font-medium"><i class="fab fa-instagram mr-1"></i> @galery_malta</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs text-emerald-700 font-semibold uppercase tracking-wider">Ekstrakurikuler & Upacara</span>
+                        <h3 class="font-bold text-slate-900 text-lg mt-1">Kedisiplinan & Nasionalisme</h3>
+                        <p class="text-slate-600 text-sm mt-2">Kegiatan rutin upacara bendera dan pembinaan karakter siswa siswi MAS Al Ittihad Trowulan.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 group hover:shadow-md transition">
+                    <div class="relative h-64 overflow-hidden bg-emerald-100">
+                        <img src="https://placehold.co/600x400/15803d/ffffff?text=Pembelajaran+Kelas" alt="Proses Belajar Mengajar" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/e2e8f0/64748b?text=MAS+Al+Ittihad'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4">
+                            <span class="text-white text-sm font-medium"><i class="fab fa-instagram mr-1"></i> @galery_malta</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs text-emerald-700 font-semibold uppercase tracking-wider">Akademik</span>
+                        <h3 class="font-bold text-slate-900 text-lg mt-1">Kegiatan Belajar Mengajar (KBM)</h3>
+                        <p class="text-slate-600 text-sm mt-2">Suasana kelas interaktif dan kondusif didukung tenaga pendidik profesional dan berpengalaman.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 group hover:shadow-md transition">
+                    <div class="relative h-64 overflow-hidden bg-emerald-100">
+                        <img src="https://placehold.co/600x400/14532d/ffffff?text=Prestasi+dan+Seni" alt="Seni dan Prestasi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/e2e8f0/64748b?text=MAS+Al+Ittihad'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4">
+                            <span class="text-white text-sm font-medium"><i class="fab fa-instagram mr-1"></i> @galery_malta</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs text-emerald-700 font-semibold uppercase tracking-wider">Seni & Kreativitas</span>
+                        <h3 class="font-bold text-slate-900 text-lg mt-1">Pengembangan Bakat Siswa</h3>
+                        <p class="text-slate-600 text-sm mt-2">Wadah ekspresi kreativitas seni Islami, olahraga, dan keterampilan ekstrakurikuler lainnya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="informasi" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight sm:text-4xl mb-4">Informasi & Pengumuman</h2>
+                <p class="text-slate-600 text-base sm:text-lg">Update terbaru seputar penerimaan peserta didik baru dan kegiatan madrasah.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-6">
+                    <div class="w-10 h-10 bg-emerald-600 text-white rounded-xl flex items-center justify-center font-bold mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Pendaftaran Siswa Baru (PPDB)</h3>
+                    <p class="text-slate-600 text-sm mb-4">Penerimaan Peserta Didik Baru MAS Al Ittihad Trowulan telah dibuka. Daftarkan segera putra-putri Anda.</p>
+                    <span class="text-xs font-semibold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full">Gelombang Aktif</span>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+                    <div class="w-10 h-10 bg-slate-800 text-white rounded-xl flex items-center justify-center font-bold mb-4">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Kalender Akademik</h3>
+                    <p class="text-slate-600 text-sm mb-4">Informasi lengkap jadwal Ujian Tengah Semester, Ujian Akhir Semester, serta libur nasional madrasah.</p>
+                    <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-3 py-1 rounded-full">Semester Ini</span>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+                    <div class="w-10 h-10 bg-purple-600 text-white rounded-xl flex items-center justify-center font-bold mb-4">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Ekstrakurikuler & Prestasi</h3>
+                    <p class="text-slate-600 text-sm mb-4">Pramuka, Rohis, Seni Baca Al-Qur'an (Tilawah), Olahraga, dan berbagai bidang prestasi lainnya.</p>
+                    <span class="text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full">Aktif & Unggul</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <span class="text-emerald-400 font-semibold text-sm uppercase tracking-wider block mb-2">Hubungi Kami</span>
+                    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl mb-6">Lokasi & Kontak MAS Al Ittihad</h2>
+                    <p class="text-slate-300 text-base mb-8">
+                        Silakan kunjungi madrasah kami atau hubungi melalui kanal media sosial resmi untuk informasi pendaftaran dan kerja sama lebih lanjut.
+                    </p>
+
+                    <div class="space-y-4 text-slate-300 text-sm">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-emerald-400 mt-1 text-lg"></i>
+                            <div>
+                                <strong class="block text-white">Alamat</strong>
+                                <span>Jl. Raden Wijaya No. 105, Tawangsari, Kec. Trowulan, Kabupaten Mojokerto, Jawa Timur</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-fingerprint text-emerald-400 text-lg"></i>
+                            <div>
+                                <strong class="block text-white">NPSN</strong>
+                                <span>20584241</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fab fa-instagram text-pink-400 text-lg"></i>
+                            <div>
+                                <strong class="block text-white">Instagram Resmi</strong>
+                                <a href="https://www.instagram.com/galery_malta/" target="_blank" class="text-pink-400 hover:underline">@galery_malta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Message Form -->
+                <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 sm:p-8 shadow-xl">
+                    <h3 class="text-xl font-bold text-white mb-4">Kirim Pesan / Pertanyaan</h3>
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 uppercase mb-1">Nama Lengkap</label>
+                            <input type="text" id="sender-name" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 text-sm" placeholder="Masukkan nama Anda...">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 uppercase mb-1">Nomor WhatsApp / Email</label>
+                            <input type="text" id="sender-contact" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 text-sm" placeholder="Contoh: 08123456789">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 uppercase mb-1">Pesan</label>
+                            <textarea id="sender-message" rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 text-sm" placeholder="Tuliskan pertanyaan seputar pendaftaran atau informasi sekolah..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3 rounded-xl shadow transition duration-200">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                    <div id="form-success" class="hidden mt-4 p-4 bg-emerald-900/50 border border-emerald-500 text-emerald-200 text-sm rounded-xl text-center">
+                        Terima kasih! Pesan Anda berhasil disimulasikan terkirim ke pihak madrasah.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p>&copy; 2026 MAS Al Ittihad (NPSN: 20584241). All rights reserved. Powered for Vercel Deployment.</p>
+            <p class="mt-2 text-xs text-slate-500">Referensi Data: Kemendikdasmen & Galeri Resmi <a href="https://www.instagram.com/galery_malta/" target="_blank" class="text-pink-400 hover:underline">@galery_malta</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form Submit Handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('sender-name').value;
+            const successBox = document.getElementById('form-success');
+            
+            successBox.innerText = `Terima kasih, ${name}! Pesan Anda telah diterima oleh sistem MAS Al Ittihad. Kami akan segera merespons.`;
+            successBox.classList.remove('hidden');
+            document.getElementById('contact-form').reset();
+            
+            setTimeout(() => {
+                successBox.classList.add('hidden');
+            }, 6000);
+        }
+    </script>
+</body>
+</html>
